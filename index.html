@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="dashboard-header">
+        <p class="eyebrow">Student Dashboard</p>
+        <h1>Task Manager</h1>
+        <p class="subtitle">Add study tasks, mark them complete, and keep your list organized.</p>
+      </header>
+
+      <section class="stats-row" aria-label="Task summary">
+        <article class="stat-card">
+          <span class="stat-label">Total Tasks</span>
+          <strong id="totalCount">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Completed</span>
+          <strong id="completedCount">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Pending Tasks</span>
+          <strong id="pendingCount">0</strong>
+        </article>
+      </section>
+
+      <section class="task-panel">
+        <form id="taskForm" class="task-form">
+          <label for="taskInput">Task name</label>
+          <div class="form-row">
+            <input
+              type="text"
+              id="taskInput"
+              name="taskName"
+              placeholder="e.g. Finish Practical 3 notes"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" class="add-button">Add Task</button>
+          </div>
+        </form>
+
+        <h2 class="task-list-heading">Your tasks</h2>
+        <p id="emptyMessage" class="empty-message">No tasks yet. Add a study task above to get started.</p>
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
