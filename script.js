@@ -1,3 +1,4 @@
+// Updated for Git Source Control practical
 const taskForm = document.getElementById("taskForm");
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
